@@ -137,6 +137,7 @@ body {
   width: 900px;
   margin: auto;
   box-align: center;
+  font-family: 'Rancho', cursive;
 }
 nav ul {
   list-style-type: none;
@@ -202,22 +203,57 @@ header section img {
   float: right;
 }
 .all-about-me {
-  border: 1px black solid;
-  height: 350px;
+  border: 1px solid black;
+  height: 360px;
 }
 .all-about-me div {
   display: flex;
   flex-direction: column;
 }
 .all-about-me div h4 {
-  font-size: 25px;
-  padding-bottom: 15px;
+  font-size: 30px;
+  padding: 15px;
+  font-weight: bold;
 }
 .all-about-me div ul.pawprint {
   list-style-image: url('/images/icons8-cat-footprint-24.png');
-  padding-left: 25px;
+  padding-left: 35px;
+  font-size: 23px;
+  line-height: 26px;
+  color: skyblue;
 }
 .jobs {
   border: 1px solid black;
-  height: 350px;
+  height: 330px;
+}
+.jobs h5 {
+  font-size: 30px;
+  padding: 15px;
+  font-weight: bold;
+}
+.jobs p {
+  padding-left: 35px;
+  padding-bottom: 15px;
+  font-size: 23px;
+  line-height: 26px;
+  color: skyblue;
+}
+footer .contactlist {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+footer .address {
+  margin-top: 20px;
+}
+footer .email {
+  margin-top: 20px;
+}
+footer .phone {
+  margin-top: 20px;
+}
+footer img {
+  margin-top: 15px;
+  margin-right: 5px;
+  margin-left: 25px;
 }
