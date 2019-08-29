@@ -220,10 +220,11 @@ header section img {
   padding-left: 35px;
   font-size: 23px;
   line-height: 26px;
-  color: skyblue;
+  color: #3397be;
 }
 .jobs {
   border: 1px solid black;
+  border-top: none;
   height: 330px;
 }
 .jobs h5 {
@@ -236,7 +237,7 @@ header section img {
   padding-bottom: 15px;
   font-size: 23px;
   line-height: 26px;
-  color: skyblue;
+  color: #3397be;
 }
 footer .contactlist {
   display: flex;
