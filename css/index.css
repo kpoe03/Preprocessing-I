@@ -1,1 +1,301 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Kristen Poe
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 900px;
+  margin: auto;
+  box-align: center;
+  font-family: 'Rancho', cursive;
+}
+.flex {
+  display: flex;
+}
+.justify {
+  justify-content: center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+nav li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+nav li:last-child {
+  border-right: none;
+}
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav li a:hover:not(.active) {
+  background-color: red;
+}
+nav .active {
+  background-color: purple;
+}
+header {
+  text-align: center;
+}
+header section {
+  display: flex;
+  width: 900px;
+  min-height: 500px;
+  box-sizing: border-box;
+  background-color: #3397be;
+}
+header section div {
+  display: flex;
+  flex-direction: column;
+}
+header section div h1 {
+  font-size: 68px;
+  padding-top: 40px;
+  font-weight: bold;
+}
+header section div h2 {
+  margin-top: 40px;
+  font-size: 50px;
+}
+header section div h3 {
+  margin-top: 40px;
+  font-size: 40px;
+}
+header section div p {
+  font-size: 30px;
+  padding-top: 40px;
+}
+header section img {
+  height: auto;
+  width: 340px;
+  float: right;
+}
+.all-about-me {
+  border: 1px solid black;
+  min-height: 360px;
+}
+.all-about-me div {
+  display: flex;
+  flex-direction: column;
+}
+.all-about-me div h4 {
+  font-size: 30px;
+  padding: 15px;
+  font-weight: bold;
+}
+.all-about-me div ul.pawprint {
+  list-style-image: url('/images/icons8-cat-footprint-24.png');
+  padding-left: 35px;
+  font-size: 23px;
+  line-height: 26px;
+  color: #3397be;
+}
+.jobs {
+  border: 1px solid black;
+  border-top: none;
+  min-height: 330px;
+}
+.jobs h5 {
+  font-size: 30px;
+  padding: 15px;
+  font-weight: bold;
+}
+.jobs p {
+  padding-left: 35px;
+  padding-bottom: 15px;
+  font-size: 23px;
+  line-height: 26px;
+  color: #3397be;
+}
+footer .contactlist {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+footer .address {
+  margin-top: 20px;
+}
+footer .email {
+  margin-top: 20px;
+}
+footer .phone {
+  margin-top: 20px;
+}
+footer img {
+  margin-top: 15px;
+  margin-right: 5px;
+  margin-left: 25px;
+}
+@media (max-width: 500px) {
+  img {
+    margin-left: 68px;
+    height: auto;
+  }
+  .all-about-me {
+    display: flex;
+    width: 54%;
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+  .jobs {
+    width: 54%;
+    padding-right: 10px;
+  }
+  header {
+    width: 54%;
+    display: flex;
+  }
+  header section {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  header section p {
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .contactlist {
+    flex-direction: column;
+    width: 54%;
+    align-items: center;
+    text-align: center;
+  }
+}
