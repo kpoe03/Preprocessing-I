@@ -142,6 +142,9 @@ body {
 .flex {
   display: flex;
 }
+.justify {
+  justify-content: center;
+}
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -175,7 +178,7 @@ header {
 header section {
   display: flex;
   width: 900px;
-  height: 500px;
+  min-height: 500px;
   box-sizing: border-box;
   background-color: #3397be;
 }
@@ -207,7 +210,7 @@ header section img {
 }
 .all-about-me {
   border: 1px solid black;
-  height: 360px;
+  min-height: 360px;
 }
 .all-about-me div {
   display: flex;
@@ -228,7 +231,7 @@ header section img {
 .jobs {
   border: 1px solid black;
   border-top: none;
-  height: 330px;
+  min-height: 330px;
 }
 .jobs h5 {
   font-size: 30px;
@@ -260,4 +263,39 @@ footer img {
   margin-top: 15px;
   margin-right: 5px;
   margin-left: 25px;
+}
+@media (max-width: 500px) {
+  img {
+    margin-left: 68px;
+    height: auto;
+  }
+  .all-about-me {
+    display: flex;
+    width: 54%;
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+  .jobs {
+    width: 54%;
+    padding-right: 10px;
+  }
+  header {
+    width: 54%;
+    display: flex;
+  }
+  header section {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  header section p {
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .contactlist {
+    flex-direction: column;
+    width: 54%;
+    align-items: center;
+    text-align: center;
+  }
 }
