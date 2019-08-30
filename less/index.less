@@ -63,6 +63,12 @@ html, body {
 	font-family: 'Rancho', cursive;
 	}
 
+@color: rgb(51, 151, 190);
+@border: 1px solid black;
+
+.flex {
+	display: flex;
+}
 
 	nav {
 		ul {
@@ -88,6 +94,7 @@ html, body {
 			  text-align: center;
 			  padding: 14px 16px;
 			  text-decoration: none;
+			  
 		  }
 		  
 		  li a:hover:not(.active) {
@@ -105,14 +112,14 @@ html, body {
 		text-align: center;
 		
 		section {
+			.flex();
 			width: 900px;
 			height: 500px;
-			display: flex;
 			box-sizing: border-box;
-			background-color: skyblue;
+			background-color: @color;
 			
 			div {
-				display: flex;
+				.flex();
 				flex-direction: column;
 
 				h1 {
@@ -145,12 +152,12 @@ html, body {
 	}	
 
 	.all-about-me {
-		border: 1px solid black;
+		border: @border;
 		height: 360px;
 		
 		div {
-		display: flex;
-		flex-direction: column;
+			.flex();
+			flex-direction: column;
 		
 			h4 {
 				font-size: 30px;
@@ -163,7 +170,7 @@ html, body {
 				padding-left: 35px;
 				font-size: 23px;
 				line-height: 26px;
-				color: rgb(51, 151, 190);
+				color: @color;
 			}
 		}
 	}
@@ -184,7 +191,7 @@ html, body {
 				padding-bottom: 15px;
 				font-size: 23px;
 				line-height: 26px;
-				color: rgb(51, 151, 190);
+				color: @color;
 			}
 		
 	}
@@ -192,7 +199,7 @@ html, body {
 	footer {
 		
 		.contactlist {
-			display: flex;
+			.flex();
 			list-style: none;
 			justify-content: center;
 		}
